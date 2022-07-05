@@ -1,0 +1,418 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    background-color: #FCF4ED;
+    color: #2E282A;
+}
+
+a {
+    color: #17BEBB;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+nav, footer {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.title {
+    font-family: 'Lora', serif;
+}
+
+.items {
+    width: 50%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.element {
+    margin: 20px 40px;
+    line-height: 2rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
+}
+
+/* Navigation bar */
+
+.navbar {
+    font-size: 0.9rem;
+    list-style-type: none;
+    position: fixed;
+    width: 100%;
+    background-color: #2E282A;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-filler {
+    height: 38px;
+    visibility: hidden;
+}
+
+.navbar li {
+    padding: 10px;
+    color: #FCF4ED;
+}
+
+.homebtn a {
+    margin-left: 5px;
+    text-decoration: none;
+    color: #17BEBB;
+    border: 1px solid #17BEBB;
+    padding: 4px;
+    border-radius: 10px;
+    box-shadow: 0px 2px;
+}
+
+.homebtn a:hover {
+    background-color: #17BEBB;
+    color: #FCF4ED;
+    transition: all 0.3s, box-shadow 0s;
+    border-color: #FCF4ED;
+}
+
+.homebtn a:active {
+    position: relative;
+    top: 2px;
+    box-shadow: 0px 0px;
+    transition: none;
+}
+
+/* Welcome banner */
+
+h1, #welcome-word {
+    display: inline;
+    font-size: 50px;
+}
+
+#welcome-word {
+    font-size: 100px;
+}
+
+#welcome-banner {
+    display: flex;
+    float: left;
+    width: 50%;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin-top: 50px;
+}
+
+/* Colors */
+
+#colors {
+    font-family: 'Poppins', sans-serif;
+    float: right;
+}
+
+#colors-title {
+    margin: 20px;
+    position: relative;
+    left: 6px;
+    top: 8px;
+}
+
+#colors .element:hover {
+    width: 240px;
+    height: 240px;
+    font-size: 1.5rem;
+    line-height: 3rem;
+}
+
+#colors .element p {
+    display: inline;
+}
+
+#c1 {
+    background-color: #17BEBB;
+}
+
+#c2 {
+    background-color: #2E282A;
+    color: #FCF4ED;
+}
+
+#c3 {
+    background-color: #CD5334;
+}
+
+#c4 {
+    background-color: #f9cbc8;
+}
+
+/* Fonts */
+
+#fonts-title {
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    margin-top: 80px;
+}
+
+#fonts {
+    font-size: 0.85em;
+    float: left;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+#fonts .element {
+    width: 250px;
+    height: 150px;
+    border: 2px double #2E282A;
+    line-height: normal;
+    border-radius: 20px;
+    margin: 30px 20px;
+}
+
+.element h3 {
+    font-size: 2.4em;
+    padding-bottom: 10px;
+}
+
+#f3 h3 {
+    font-size: 2.1em;
+}
+
+#f1 {
+    font-family: 'Lora', serif;
+}
+
+#f2 {
+    font-family: 'Poppins', sans-serif;
+}
+
+#f3 {
+    font-family: 'Playfair Display', serif;
+}
+
+#f4 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#fonts .element:hover {
+    width: 300px;
+    height: 200px;
+    margin: 0;
+}
+
+#f1:hover {
+    box-shadow: 4px 4px 4px #2E282A;
+    font-size: 139%;
+}
+
+#f2:hover {
+    box-shadow: -4px 4px 4px #2E282A;
+    font-size: 127%;
+}
+
+#f3:hover {
+    box-shadow: 4px -4px 4px #2E282A;
+    font-size: 140%;
+}
+
+#f4:hover {
+    box-shadow: -4px -4px 4px #2E282A;
+    font-size: 130%;
+}
+
+#fonts a {
+    color: #2E282A;
+}
+
+/* Styles */
+
+#styles {
+    float: right;
+    width: 50%;
+    flex-flow: row wrap;
+}
+
+#styles-title {
+    display: inline-block;
+    width: 50%;
+    margin-top: 40px;
+}
+
+.styles-element-title {
+    color: #f9cbc8;
+    background-color: #2E282A;
+    border-radius: 50%;
+}
+
+#s1 .styles-element-title {
+    padding: 0px 30px;
+    font-family: 'Lora', serif;
+    font-size: 80px;
+    font-weight: 700;
+    font-style: italic;
+}
+
+#s2 .styles-element-title {
+    padding: 10px 20px;
+    font-family: 'Lora', serif;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+#s3 .styles-element-title {
+    padding: 5px 15px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#s4 .styles-element-title {
+    border-radius: 50%;
+    padding: 5px 15px;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 14.4px !important;
+    font-weight: 400;
+}
+
+#styles .element p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+#styles .element {
+    width: max-content;
+    height: min-content;
+    line-height: normal;
+    margin: 20px 0px;
+
+}
+
+#styles>* {
+    width: max-content;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#styles .right {
+    justify-content: end;
+    gap: 55px;
+}
+
+/* Footer */
+
+footer, footer ul, footer ul a {
+    display: flex;
+}
+
+footer {
+    color: #F9CBC8;
+    font-size: 0.9rem;
+    width: 100%;
+    background-color: #2E282A;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer ul a {
+    flex-flow: column;
+    align-items: center;
+    color: #F9CBC8;
+    text-decoration: none;
+}
+
+footer ul li {
+    margin: 6px 20px 8px;
+}
+
+footer ul a {
+    padding: 4px 8px;
+    border: 1px solid #F9CBC8;
+    border-radius: 10px;
+    box-shadow: 0px 3px;
+}
+
+footer ul a:hover {
+    background-color: #F9CBC8;
+    color: #2E282A;
+    border-color: #FCF4ED;
+    box-shadow: 0px 3px #FCF4ED;
+    transition: all 0.3s, box-shadow 0s;
+}
+
+footer ul a:active {
+    position: relative;
+    top: 3px;
+    box-shadow: 0px 0px;
+    transition: none;
+}
+
+footer p {
+    margin: 0px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* About me page */
+
+nav#aboutme li {
+    font-size: 13.4px;
+}
+
+nav#aboutme .homebtn a {
+    border-color: #CD5334;
+    color: #CD5334;
+}
+
+nav#aboutme .homebtn a:hover {
+    background-color: #CD5334;
+    color: #FCF4ED;
+}
+
+nav#aboutme a {
+    color: #CD5334;
+}
+
+h1#aboutme {
+    font-size: 80px;
+    color: #2E282A;
+    display: inline-flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    background-image: radial-gradient(#F9CBC8 55%, #FCF4ED 55%);
+    width: 600px;
+    height: 300px;
+}
+
+main#aboutme {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
