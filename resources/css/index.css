@@ -9,7 +9,7 @@ html, body {
 }
 
 a {
-    color: #17BEBB;
+    color: #F9CBC8;
 }
 
 a:hover {
@@ -81,16 +81,17 @@ h2 {
 .homebtn a {
     margin-left: 5px;
     text-decoration: none;
-    color: #17BEBB;
-    border: 1px solid #17BEBB;
+    color: #F9CBC8;
+    border: 1px solid #F9CBC8;
     padding: 4px;
     border-radius: 10px;
     box-shadow: 0px 2px;
 }
 
 .homebtn a:hover {
-    background-color: #17BEBB;
-    color: #FCF4ED;
+    background-color: #F9CBC8;
+    color: #2E282A;
+    box-shadow: 0px 2px #FCF4ED;
     transition: all 0.3s, box-shadow 0s;
     border-color: #FCF4ED;
 }
