@@ -1,0 +1,144 @@
+body, a {
+    font-family: Helvetica, sans-serif;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+    text-align: center;
+}
+
+a:hover {
+    opacity: 1;
+}
+
+h1, h2, h3.title, h4, h5 {
+    font-weight: bold;
+}
+
+main {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 100px;
+}
+
+header {
+    width: inherit;
+}
+
+.two-line>* {
+    padding: 10px 0px;
+}
+
+/* Upper bar section */
+
+.upper-bar {
+    position: sticky;
+    top: 0;
+    background-color: black;
+    height: 69px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid seashell;
+}
+
+.upper-bar img {
+    height: 50px;
+    margin-left: 10px;
+}
+
+.upper-bar ul {
+    display: flex;
+    gap: 30px; /* Measured by eye */
+    margin-right: 10px;
+}
+
+/* Our Mission section */
+
+#mission {
+    height: 700px;
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../images/img-mission-background.jpg");
+}
+
+#mission header {
+    background-color: black;
+    display: flex;
+    flex-flow: column;
+}
+
+/* Tea of the Month section */
+
+#tea-of-month {
+    width: 1000px;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+#tea-of-month img {
+    height: 200px;
+    width: 300px;
+}
+
+#tea-of-month figure {
+    line-height: 2rem;
+    margin: 15px;
+}
+
+/* Locations section */
+
+#locations {
+    height: 500px;
+    width: 1200px;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+    background-image: url("../images/img-locations-background.jpg");
+}
+
+.black-boxes {
+    margin-bottom: 100px;
+    display: flex;
+    gap: 40px;
+}
+
+#locations figure {
+    height: 300px;
+    width: 300px;
+    background-color: black;
+    opacity: 1;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Footer section */
+
+footer, .centered {
+    display: flex;
+    flex-flow: column;
+}
+
+.centered {
+    height: 150px;
+    padding-bottom: 50px;
+    justify-content: space-between;
+}
+
+footer h2 {
+    margin: 10px;
+}
+
+footer .left {
+    align-self: flex-start;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}

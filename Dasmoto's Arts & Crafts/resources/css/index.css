@@ -1,0 +1,41 @@
+body {
+    font-family: Helvetica; 
+}
+
+strong {
+    color: blue;
+}
+
+figure {
+    margin: 0;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+#headtitle {
+    font-size: 100px;
+    color: khaki;
+    width: 100%;
+    text-align: center;
+    background-image: url(../images/pattern.jpeg);
+}
+
+.title2 {
+    font-size: 32px;
+    color: white;
+    border-radius: 5px;
+}
+
+#brushes {
+    background-color: mediumspringgreen;
+}
+
+#frames {
+    background-color: lightcoral;
+}
+
+#paint {
+    background-color: skyblue;
+}

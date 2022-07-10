@@ -1,0 +1,68 @@
+body, table span {
+    background-color: #c8dac2;
+}
+
+header h1, header h2, a:active, a:hover {
+    color: #033500;
+}
+
+header h1 {
+    text-align: center;
+    font-family: 'Trispace', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+table, th, td {
+    margin: 0 auto;
+    margin-top: 70px;
+    background-color: #87a96b;
+    border: 3px solid #c8dac2;
+    border-collapse: collapse;
+    padding: 5px 10px;
+    text-align: left;
+    font-family: 'Lato', sans-serif;
+}
+
+th {
+    font-size: 18px;
+    font-weight: 900;
+}
+
+td {
+    font-size: 16px;
+}
+
+table span {
+    font-family: monospace;
+    font-size: 14px;
+    padding: 1px;
+}
+
+table span.intext {
+    padding: 0;
+}
+
+a {
+    color: #5A7A98;
+}
+
+header h2 {
+    font-family: 'Trispace', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+}
+
+nav li {
+    position: absolute;
+    top: 10px;
+}
+
+table.attributes {
+    margin: 73.7px auto;
+}
+
+table .value {
+    font-style: italic;
+}
