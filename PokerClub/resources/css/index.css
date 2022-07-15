@@ -1,0 +1,284 @@
+/* Universal styles */
+
+html, body {
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+a {
+    color: #ff4532;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #ffa298;
+    text-decoration: none;
+}
+
+h1 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 7rem;
+    color: #ff4532;
+}
+
+h2 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 3.5rem;
+    line-height: 4.5rem;
+    font-weight: 700;
+    padding: 2rem 0;
+    color: #020202;
+}
+
+h3 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 3rem;
+    line-height: 3.5rem;
+    font-weight: 400;
+    color: #fff;
+}
+
+p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #a8a7a7;
+    line-height: 1.6rem;
+}
+
+p strong {
+    font-weight: 900;
+}
+
+em {
+    font-style: italic;
+}
+
+/* Multiple objects with same styles */
+
+.banner, .gallery, .content {
+    height: 100%;
+    width: 100%;
+}
+
+/* Multiple time use rulesets */
+
+.multiline {
+    display: flex;
+    text-align: center;
+    flex-flow: column;
+}
+
+/* Navigation bar */
+
+.navbar {
+    height: 3.325rem;
+    width: 100%;
+    display: flex;
+    background-color: #020202;
+    justify-content: space-between;
+    position: fixed;    
+    top: 0;
+    transition: top 0.3s;
+}
+
+.navlinks {
+    display: flex;
+    width: 25rem;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navlinks a {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.05rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.icon {
+    height: 100%;
+    background-image: url("../images/icon.png");
+    background-size: contain;
+}
+
+.icon img {
+    max-height: 100%;
+    visibility: hidden;
+}
+
+.icon:hover {
+    background-image: url("../images/icon-hover.png");
+}
+
+@media only screen and (max-width: 300px) {
+    .icon {
+        display: none;
+    }
+}
+
+/* Banner */
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    background-image: url("../images/main-banner-background2.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.banner>* {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 620px) {
+    .right-side {
+        display: none;
+    }
+    .left-side {
+        width: 100%;
+    }
+}
+
+/* Gallery */
+
+.gallery {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: flex-start;
+    justify-content: space-between;
+}
+
+.gallery .image {
+    margin: 1rem;
+    width: 30%;
+}
+
+.gallery .image img {
+    box-sizing: border-box;
+    border: 5px solid #020202;
+    border-radius: 10%;
+    box-shadow: 3px 10px 10px #020202, -3px 10px 10px #020202;
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 1200px) {
+    .gallery {
+        height: auto;
+        justify-content: center;
+        margin-bottom: 3rem;
+    }
+    .gallery .title {
+        width: 100%;
+        text-align: center;
+        order: 1;
+    }
+    .gallery .image {
+        order: 2;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    .gallery .image {
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width: 660px) {
+    .gallery .image {
+        width: 95%;
+    }
+}
+
+/* Rules & Join us */
+
+.full-image {
+    height: 100%;
+}
+
+.full-image img {
+    max-height: 100%;
+}
+
+.content {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.content .title {
+    text-align: center;
+}
+
+.content p {
+    margin: 0.8rem 0;
+}
+
+.spaced {
+    margin: 2rem 0 !important;
+}
+
+.center {
+    text-align: center;
+}
+
+@media only screen and (max-width: 1200px) {
+    .content {
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    .full-image {
+        width: 100%;
+        height: auto;
+    }
+    .full-image img {
+        max-width: 100%;
+    }
+    .text {
+        text-align: center !important;
+    }
+}
+
+/* Rules */
+
+#rules-image {
+    float: left;
+}
+
+#rules .text {
+    text-align: right;
+}
+
+/* Join us */
+
+#join-us-image {
+   float: right;
+}
+
+#join-us .text {
+    text-align: left;
+}
+
+.break {
+    display: none;
+}
+
+@media only screen and (max-width: 284px) {
+    .nobreak {
+        display: none;
+    }
+    .break {
+        display: initial;
+    }
+}
