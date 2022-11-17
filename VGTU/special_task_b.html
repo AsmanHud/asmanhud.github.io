@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" type="image/png" href="https://vilniustech.lt/images/3845/192/9/17_1/VGTU_Herbas_Color_RGB_png.png">
+    <title>VGTU task</title>
+    <style type="text/css">
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+        td {
+            border: 1px solid black;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            overflow: hidden;
+            padding: 30px 30px;
+            word-break: normal;
+            text-align: left;
+            vertical-align: top;
+        }
+        td.n {
+            text-align: left;
+            vertical-align: middle;
+        }
+        td.higi {
+            padding: 0;
+        }
+        td.higi table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+        td.higi td {
+            border: 0;
+            padding: 11px 30px;
+        }
+        td.higi .hi {
+            border-bottom: 1px solid black;
+        }
+        .yellow {
+            background-color: yellow;
+        }
+        .blue {
+            background-color: blue;
+        }
+        .italic {
+            font-style: italic;
+        }
+        .bold {
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tbody>
+          <tr>
+            <td>a</td>
+            <td class="blue bold">b</td>
+            <td>c</td>
+            <td colspan="7">d</td>
+          </tr>
+          <tr>
+            <td>e</td>
+            <td>f</td>
+            <td>g</td>
+            <td>h</td>
+            <td class="italic gradient" colspan="6" rowspan="2">i</td>
+          </tr>
+          <tr>
+            <td>j</td>
+            <td>k</td>
+            <td>l</td>
+            <td>m</td>
+          </tr>
+          <tr>
+            <td class="n" rowspan="2">n</td>
+            <td>o</td>
+            <td>p</td>
+            <td>r</td>
+            <td colspan="4">s</td>
+            <td colspan="2">t</td>
+          </tr>
+          <tr>
+            <td>v</td>
+            <td>z</td>
+            <td class="yellow" rowspan="2">y</td>
+            <td class="italic double-color" rowspan="2">di</td>
+            <td class="italic double-color" rowspan="2">ei</td>
+            <td class="italic double-color" rowspan="2">fi</td>
+            <td class="italic double-color" rowspan="2">ki</td>
+            <td class="italic double-color" colspan="2">li</td>
+          </tr>
+          <tr>
+            <td>x</td>
+            <td class="italic double-color">ai</td>
+            <td class="italic double-color bold">bi</td>
+            <td class="higi" colspan="2">
+              <!-- I did "table in the table", pretty smart? :D -->
+              <table>
+                <tr>
+                  <td class="hi italic double-color">hi</td>
+                </tr>
+                <tr>
+                  <td class="italic double-color">gi</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </tbody>
+    </table>
+    <h1>Try reloading the page!</h1>
+    <script type="text/javascript">
+      let gen = () => Math.floor(Math.random()*256);
+      console.log(document.getElementsByClassName("double-color"))
+      for (const elem of document.getElementsByClassName("double-color")) {
+        elem.style.background = `linear-gradient(rgba(${gen()}, ${gen()}, ${gen()}, 1) 0 50%, rgba(${gen()}, ${gen()}, ${gen()}, 1) 50% 100%)`;
+      }
+    </script>
+</body>

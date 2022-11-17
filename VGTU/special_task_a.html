@@ -1,0 +1,137 @@
+<html>
+    <head>
+        <style>
+            html, body {
+                margin: 0;
+                padding: 0;
+            }
+            body {
+                display: grid;
+                grid-template-columns: repeat(7, 1fr);
+                grid-template-rows: repeat(4, 1fr);
+                grid-template-areas: 
+                    "a b c c c c c"
+                    "d e f g g g g"
+                    "h i f j k l m"
+                    "n o f p r r s";
+            }
+            p {
+                font-size: 30px;
+            }
+            .a {
+                background-color: linear-gradient();
+            }
+            .b {
+                font-weight: 700;
+                background-color: blue;
+                color: white;
+            }
+            .i {
+                font-style: italic;
+            }
+            .r {
+                background-color: red;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: 100%;
+            }
+            .o {
+                background-color: orange;
+            }
+            .g {
+                background-color: green;
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: 100%;
+            }
+            .c {
+                background-color: cyan;
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                grid-template-rows: 100%;
+            }
+            .p {
+                background-color: purple;
+            }
+            .f {
+                display: grid;
+                grid-template-columns: 100%;
+                grid-template-rows: repeat(3, 1fr);
+            }
+            body > div {
+                border: 1px solid black;
+            }
+            div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        </style>
+        <title>Special Task 2</title>
+        <link rel="icon" type="image/png" href="https://vilniustech.lt/images/3845/192/9/17_1/VGTU_Herbas_Color_RGB_png.png">
+    </head>
+    <body>
+        <div class="a" style="grid-area: a">
+            <p>a</p>
+        </div>
+        <div class="b" style="grid-area: b">
+            <p>Blue and bold</p>
+        </div>
+        <div class="c" style="grid-area: c">
+            <div>
+                <p>c</p>
+            </div>
+        </div>
+        <div class="d" style="grid-area: d">
+            <p>d</p>
+        </div>
+        <div class="e" style="grid-area: e">
+            <p>e</p>
+        </div>
+        <div class="f" style="grid-area: f">
+            <div>
+                <p>f</p>
+            </div>
+        </div>
+        <div class="g" style="grid-area: g">
+            <div>
+                <p>g</p>
+            </div>
+        </div>
+        <div class="h" style="grid-area: h">
+            <p>h</p>
+        </div>
+        <div class="i" style="grid-area: i">
+            <p>Italic</p>
+        </div>
+        <div class="j" style="grid-area: j">
+            <p>j</p>
+        </div>
+        <div class="k" style="grid-area: k">
+            <p>k</p>
+        </div>
+        <div class="l" style="grid-area: l">
+            <p>l</p>
+        </div>
+        <div class="m" style="grid-area: m">
+            <p>m</p>
+        </div>
+        <div class="n" style="grid-area: n">
+            <p>n</p>
+        </div>
+        <div class="o" style="grid-area: o">
+            <p>o</p>
+        </div>
+        <div class="p" style="grid-area: p">
+            <p>p</p>
+        </div>
+        <div class="r" style="grid-area: r">
+            <div>
+                <p>r</p>
+            </div>
+        </div>
+        <div class="s" style="grid-area: s">
+            <p>s</p>
+        </div>
+    </body>
+</html>
