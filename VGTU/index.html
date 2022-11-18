@@ -2,17 +2,47 @@
 <html>
 <head>
     <link rel="icon" type="image/png" href="https://vilniustech.lt/images/3845/192/9/17_1/VGTU_Herbas_Color_RGB_png.png">
-    <title>Welcome Page</title>
-	<style>
-		a {
-			display: block;
-			margin: 10px; 
-		}
-	</style>
+    <title>Landing page: VGTU projects</title>
+    <style>
+        body {
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            gap: 30px 0;
+            background-color: wheat;
+            margin: 30px;
+        }
+        h1 {
+            font-size: 50px;
+            color: black;
+            margin: 0 0 20px;
+        }
+        a {
+            padding: 10px;
+            font-size: 20px;
+            border: 2px solid teal;
+            color: teal;
+            background-color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            box-shadow: 0 4px teal;
+        }
+        a:hover {
+            color: white;
+            background-color: teal;
+            box-shadow: 0 4px white;
+        }
+        a:active {
+            box-shadow: none;
+            position: relative;
+            top: 4px;
+        }
+    </style>
 </head>
 <body>
     <h1>Welcome to my VGTU websites!</h1>
-    <a href="./lab8/lab8.html">Laboratory Work #8</a>
+    <a href="./lab8/index.html">Laboratory Work #8</a>
     <a href="./special_task_a.html">2-nd special task - the Tables (subtask 1)</a>
     <a href="./special_task_b.html">2-nd special task - the Tables (subtask 2)</a>
 </body>
+</html>
