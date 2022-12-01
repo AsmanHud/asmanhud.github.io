@@ -45,6 +45,11 @@ header {
     font-size: 20px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+
+header.lang {
+    justify-content: flex-end;
 }
 
 header a {
@@ -60,11 +65,11 @@ header a:visited {
     color: var(--link-color);
 }
 
-.breadcrumb {
+small {
     margin: 0 20px;
 }
 
-.breadcrumb span {
+header span {
     padding: 0 10px;
 }
 
