@@ -1,0 +1,115 @@
+:root {
+    --bg-receipt-color: #a2a2a2;
+    --receipt-text-color: #2c2c2c;
+    --link-color: #32329f;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.gray {
+    background-color: var(--bg-receipt-color);
+}
+
+@font-face {
+    font-family: Regular;
+    src: url(../fonts/Open_Sans/static/OpenSans/OpenSans-Regular.ttf);
+    font-family: Bold;
+    src: url(../fonts/Open_Sans/static/OpenSans/OpenSans-Bold.ttf);
+}
+
+h1 {
+    font-size: 36px;
+    font-family: Bold;
+    margin: 50px 0;
+    text-align: center;
+}
+
+p {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 15px 0;
+}
+
+header {
+    height: 50px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--link-color);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header a:visited {
+    color: var(--link-color);
+}
+
+.breadcrumb {
+    margin: 0 20px;
+}
+
+.breadcrumb span {
+    padding: 0 10px;
+}
+
+.button {
+    background-color: #4caf50;
+    border: 3px #4caf50 solid;
+    color: white;
+    padding: 15px 32px;
+    font-family: Regular;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 12px 28px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    width: 400px;
+    height: 100px;
+    border-radius: 20px;
+}
+
+.button:hover {
+    box-shadow: 5px 12px 16px gray;
+}
+
+.button:active {
+    color: #4caf50;
+    background-color: white;
+    transition: none;
+}
+
+#receipt {
+    position: relative;
+}
+
+#receipt img {
+    width: 400px;
+}
+
+#randn {
+    font-size: 100px;
+    color: var(--receipt-text-color);
+    text-align: center;
+    position: absolute;
+    top: 27%;
+    width: 100%;
+}
