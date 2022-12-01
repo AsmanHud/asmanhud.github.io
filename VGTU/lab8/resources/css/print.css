@@ -1,0 +1,7 @@
+nav, .crust, figure, footer {
+    display: none
+}
+
+main {
+    margin: 0 10% 0;
+}
