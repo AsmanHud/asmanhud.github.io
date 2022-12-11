@@ -1,0 +1,18 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" height="30" width="30">
+    <style>
+        .circle {
+            animation-name: change-size;
+            animation-duration: 2s;
+            animation-iteration-count: 6;
+            transform-origin: 50% 50%;
+        }
+        @keyframes change-size {
+            0% { transform: scale(1); }
+            25% { transform: scale(0.5); }
+            75% {transform: scale(1.5);}
+            100%  { transform: scale(1); }
+        }
+    </style>
+    <circle class="circle" cx="15" cy="15" r="10" stroke="black" stroke-width="1" fill="white" />
+    <line class="line" x1="5" y1="15" x2="25" y2="15" stroke="black" stroke-width="1" />
+</svg>

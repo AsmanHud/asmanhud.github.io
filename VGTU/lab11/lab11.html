@@ -1,0 +1,105 @@
+<!-- Variant 8 -->
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" type="image/png" href="https://vilniustech.lt/images/3845/192/9/17_1/VGTU_Herbas_Color_RGB_png.png">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        ul {
+            padding: 0;
+            list-style: circle inside url(./svg.svg);
+        }
+        /* I tried every way to align vertically the damn text in li elements
+            and using ::before with flex works for me */
+        #flex-list li {
+            display: flex;
+            align-items: center;
+            gap: 0 7px;
+        }
+        #flex-list li::before {
+            content: url(./svg.svg);
+        }
+        /* There will be both flex list and normal list */
+    </style>
+    <title>Laboratory Work 8</title>
+</head>
+<body>
+    <!-- Math element -->
+    <math mathsize="2em" xmlns="http://www.w3.org/1998/Math/MathML">
+        <!-- Fraction, consists of two children -->
+        <mfrac>
+            <!-- mn tags enclose numbers -->
+            <mn>1</mn>
+            <!-- mrow tags for math are like div tags for html -->
+            <mrow>
+                <mn>2</mn>
+                <!-- mi tage enclose symbols, but not operators -->
+                <mi>&pi;</mi>
+            </mrow>
+        </mfrac>
+        <!-- munderover tag consists of three children: symbol operator, lower and upper bounds -->
+        <munderover>
+            <!-- mo tags are for operators (+, -, =, int symbol and etc.) -->
+            <mo>&int;</mo>
+            <mn>0</mn>
+            <mrow>
+                <mn>2</mn>
+                <mi>&pi;</mi>
+            </mrow>
+        </munderover>
+        <mfrac>
+            <mrow>
+                <mi>d</mi>
+                <mi>&theta;</mi>
+            </mrow>
+            <mrow>
+                <mi>a</mi>
+                <!-- mspace is literally just a space between elements -->
+                <mspace width='.2em' />
+                <mo>+</mo>
+                <mspace width='.2em' />
+                <mrow>
+                    <mi>b</mi>
+                    <mi>sin</mi>
+                    <mi>&theta;</mi>
+                </mrow>
+            </mrow>
+        </mfrac>
+        <mo>=</mo>
+        <mfrac>
+            <mn>1</mn>
+            <mrow>
+                <!-- msqrt tag, root, can contain any amount of children
+                    (basically they are all invisibly wrapped in mrow tags) -->
+                <msqrt>
+                    <!-- msup tag consists of two children: first the base, then the power -->
+                    <msup>
+                        <mi>a</mi>
+                        <mn>2</mn>
+                    </msup>
+                    <mspace width='.2em' />
+                    <mo>-</mo>
+                    <mspace width='.2em' />
+                    <msup>
+                        <mi>b</mi>
+                        <mn>2</mn>
+                    </msup>
+                </msqrt>
+            </mrow>
+        </mfrac>
+    </math>
+    <h3>Looks better: </h3>
+    <ul id="flex-list">
+        <li>Bread</li>
+        <li>Cheese</li>
+        <li>Tomatoes</li>
+    </ul>
+    <h3>Looks not so good as above, but still ok:</h3>
+    <ul>
+        <li>Hello</li>
+        <li>World</li>
+        <li>Foobar</li>
+    </ul>
+</body>
+</html>
