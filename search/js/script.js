@@ -12,11 +12,12 @@ document.getElementById("main-text-logo").innerHTML = newTextLogo;
 
 // Lucky search
 var random_searches = ["Bega", "Tacit", "Cheluga", "Sigma", "Alpha", "Omega", "Analiz", "Timur", "Asman", "Sakses"]
-var random_search = random_searches[Math.floor(Math.random() * random_searches.length)];
 function lucky() {
+    var random_search = random_searches[Math.floor(Math.random() * random_searches.length)];
     window.location.href = `https://www.google.com/search?q=${random_search}`;
 }
 
 function luckyImage() {
+    var random_search = random_searches[Math.floor(Math.random() * random_searches.length)];
     window.location.href = `https://www.google.com/search?q=${random_search}&tbm=isch`;
 }
