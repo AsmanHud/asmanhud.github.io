@@ -115,12 +115,10 @@ h1, #welcome-word {
 }
 
 #welcome-banner {
-    display: flex;
     float: left;
     width: 50%;
-    flex-flow: column nowrap;
-    align-items: center;
     margin-top: 50px;
+    text-align: center;
 }
 
 /* Colors */
@@ -416,4 +414,89 @@ main#aboutme {
     margin-top: 50px;
     display: flex;
     justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+
+    /* Styles for tablet and smaller */
+
+    .items, #styles {
+        width: 80%;
+    }
+
+    .element {
+        width: 100%;
+        margin: 10px 20px;
+    }
+
+    #welcome-banner, #colors, #fonts, #styles {
+        width: 100%;
+        float: none;
+    }
+
+    h1, #welcome-word {
+        font-size: 30px;
+    }
+
+    #welcome-word {
+        font-size: 60px;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    #fonts .element, #styles .element {
+        width: 100%;
+        margin: 10px 0;
+    }
+    
+    #aboutme h1 {
+        width: 80%;
+        height: 200px;
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 555px) {
+    
+    footer a[href="https://codecademy.com"] {
+        display: none;
+    }
+
+    footer a[href="https://fonts.google.com"] {
+        display: none;
+    }
+
+    footer {
+        justify-content: center;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+
+    /* Styles for mobile and smaller */
+
+    .items, #styles {
+        width: 100%;
+    }
+    
+    h1, #welcome-word {
+        font-size: 20px;
+    }
+
+    #welcome-word {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    #aboutme h1 {
+        width: 90%;
+        height: 150px;
+        font-size: 40px;
+    }
 }
