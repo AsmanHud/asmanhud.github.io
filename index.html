@@ -26,6 +26,9 @@
             text-decoration: none;
             border-radius: 10px;
             box-shadow: 0 4px teal;
+            margin: 10px 0; /* added for mobile devices */
+            width: 90%; /* added for mobile devices */
+            text-align: center; /* added for mobile devices */
         }
         a:hover {
             color: white;
@@ -36,6 +39,15 @@
             box-shadow: none;
             position: relative;
             top: 4px;
+        }
+        @media screen and (min-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+            a {
+                width: auto;
+                margin: 0;
+            }
         }
     </style>
 </head>
