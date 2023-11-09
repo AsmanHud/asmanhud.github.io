@@ -53,6 +53,12 @@ for (let btn of privatePurchasesBtns) {
 mainForm.addEventListener('submit', function (e) {
     e.preventDefault()
     calculatedDiv.innerHTML = ''
+    if (!mainForm.checkValidity()) {
+        e.stopPropagation()
+        return
+    } else {
+        mainForm.classList.add('was-validated')
+    }
     const formData = new FormData(mainForm)
     const sumInSek = parseFloat(formData.get('tot-sum-sek'))
     const sumInEur = parseFloat(formData.get('tot-sum-eur'))
@@ -68,7 +74,6 @@ mainForm.addEventListener('submit', function (e) {
             privatePurchases[person].push({ sum, name })
         }
     }
-    console.log(sumInSek, sumInEur, whoPaid, privatePurchases)
     const conversionRate = sumInSek / sumInEur
     let commonSum = sumInSek
     const privateSums = { asman: 0, roma: 0, stas: 0 }
