@@ -1,43 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+        />
+        <link rel="stylesheet" href="./style.css" />
+        <title>Number adder</title>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="stylesheet" href="./style.css">
-    <title>Складыватель</title>
-</head>
-
-<body>
-    <section class="section">
-        <div class="container">
-            <div class="column is-half is-offset-one-quarter">
-                <div class="card">
-                    <header class="card-header">
-                        <p class="card-header-title">
-                            Сумматор
-                        </p>
-                    </header>
-                    <div class="card-content">
-                        <div class="content">
-                            <form id="main-form" class="mb-5">
-                                <textarea class="textarea" name="inp"
-                                    placeholder="Вставь сюда свои цифры, разделенные через энтеры, пробелы, табы..."></textarea>
-                            </form>
-                            <p class="is-size-5">Сумма: <span id="result" class="has-text-weight-medium">0</span></p>
+    <body>
+        <section class="section">
+            <div class="container">
+                <div class="column is-half is-offset-one-quarter">
+                    <div class="card">
+                        <header class="card-header">
+                            <p class="card-header-title">Number adder</p>
+                        </header>
+                        <div class="card-content">
+                            <div class="content">
+                                <form id="main-form" class="mb-5">
+                                    <textarea
+                                        class="textarea"
+                                        name="inp"
+                                        placeholder="Insert the numbers in this field, separated by any whitespace (newlines, spaces, tabs)"
+                                    ></textarea>
+                                </form>
+                                <p class="is-size-5">
+                                    Sum:
+                                    <span
+                                        id="result"
+                                        class="has-text-weight-medium"
+                                        >0</span
+                                    >
+                                </p>
+                            </div>
                         </div>
+                        <footer class="card-footer">
+                            <button
+                                id="calc"
+                                class="button is-warning card-footer-item"
+                            >
+                                In development...
+                            </button>
+                            <button
+                                id="reset"
+                                class="button is-dark card-footer-item"
+                            >
+                                Reset
+                            </button>
+                        </footer>
                     </div>
-                    <footer class="card-footer">
-                        <button id="calc" class="button is-warning card-footer-item">Пизда!</button>
-                        <button id="reset" class="button is-dark card-footer-item">Сбросить</button>
-                    </footer>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <script src='script.js'></script>
-</body>
-
+        <script src="script.js"></script>
+    </body>
 </html>
