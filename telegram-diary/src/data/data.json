@@ -1,0 +1,28 @@
+{
+    "tabs": [
+        {
+            "tabName": "morning",
+            "tabNameMsg": "Утро",
+            "label": "Morning tasks",
+            "description": "Add, modify, and check off daily tasks when you do them"
+        },
+        {
+            "tabName": "day",
+            "tabNameMsg": "День",
+            "label": "Day tasks",
+            "description": "Add, modify, and check off daily tasks when you do them"
+        },
+        {
+            "tabName": "evening",
+            "tabNameMsg": "Вечер",
+            "label": "Evening tasks",
+            "description": "Add, modify, and check off daily tasks when you do them"
+        },
+        {
+            "tabName": "negative",
+            "tabNameMsg": "Отсутствие",
+            "label": "Negative tasks",
+            "description": "These are the tasks that you try to avoid doing"
+        }
+    ]
+}

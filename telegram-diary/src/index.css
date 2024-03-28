@@ -1,0 +1,82 @@
+/* For global styles */
+
+:root {
+    --primary-color: #647a92;
+    --secondary-color: #ccd5de;
+    --secondary-color-lighter: #f8f9fa;
+    --text-color: black;
+    --text-color-lighter: #555;
+    --primary-color-shadow: #647a9240;
+    --card-background-color: white;
+    --text-color-inverse: white;
+    --bs-icon-link-transform: translate3d(0, -.125rem, 0);
+}
+
+/* General styles */
+
+.no-border-input {
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+
+.no-border-input:focus {
+    box-shadow: none;
+    color: var(--text-color-lighter);
+    background-color: var(--secondary-color-lighter);
+}
+
+/* Bootstrap overrides */
+
+/* Buttons */
+
+.btn-secondary {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+.btn-secondary:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+.btn-secondary:active {
+    background-color: var(--primary-color);
+    color: var(--text-color-inverse);
+}
+
+/* Links */
+
+.nav-link,
+.page-link,
+.nav-link:visited,
+.nav-link:focus {
+    color: var(--primary-color);
+}
+
+.nav-link:hover,
+.page-link:hover {
+    color: var(--secondary-color);
+}
+
+.page-item.disabled .page-link {
+    background-color: var(--card-background-color);
+}
+
+/* Checkboxes */
+
+.form-check-input,
+.form-check-input:focus,
+.form-check-input:checked {
+    border-color: var(--primary-color);
+}
+
+.form-check-input:focus {
+    box-shadow: 0 0 0 0.25rem var(--primary-color-shadow);
+}
+
+.form-check-input:checked {
+    background-color: var(--primary-color);
+}
