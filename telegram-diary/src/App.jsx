@@ -175,8 +175,8 @@ function App() {
             />
             <DatePicker
                 currDate={date ? formatDate(date) : ""} // possibly change the implementation!
-                onClickPrev={() => {}}
-                onClickNext={() => {}}
+                onClickPrev={() => alert("Development in progress...")}
+                onClickNext={() => alert("Development in progress...")}
             />
             <CardHeader>
                 <TabNavigator>
