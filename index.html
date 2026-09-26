@@ -1,36 +1,137 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <link
-            rel="icon"
-            type="image/png"
-            href="https://i.ibb.co/nQkxxZk/image-placeholder-1x1.png"
-        />
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="reset.css" />
-        <link rel="stylesheet" href="style.css" />
-        <title>Landing page</title>
-    </head>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f4f2eb" />
+    <meta name="description" content="Asman Hudaykulyyev builds internal tools, workflow automations, and practical software for businesses." />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Asman Hudaykulyyev — Software & Automation" />
+    <meta property="og:description" content="Practical software for the repetitive work slowing your team down." />
+    <meta property="og:url" content="https://asmanhud.github.io/" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Asman Hudaykulyyev — Software & Automation</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header shell">
+      <a class="brand" href="#top" aria-label="Asman Hudaykulyyev, back to top">
+        <span class="brand-mark" aria-hidden="true">AH<span>.</span></span>
+        <span class="brand-name">Asman<br />Hudaykulyyev</span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#work">Work</a>
+        <a href="#services">What I build</a>
+        <a href="#about">About</a>
+        <a class="nav-contact" href="#contact">Get in touch <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
 
-    <body>
-        <h1>
-            Hi, hello or welcome, to my websites! Please proceed to one of the
-            following websites:
-        </h1>
-        <div class="links-list">
-            <a href="Danil2048/2048.html">Danil 2048</a>
-            <a href="https://asmanhud.github.io/mini-flights/">Mini Flights</a>
-            <a href="telegram-diary-dist/index.html">Telegram Diary</a>
-            <a href="PokerClub/index.html">Poker Club</a>
-            <a href="Design Guide/index.html">Design Guide</a>
-            <a href="VGTU\index.html">VGTU projects</a>
-            <a href="Number adder/index.html">Number Adder</a>
-            <a href="ScoreKeeper/index.html">Score Keeper (Bulma Demo)</a>
-            <a href="Sweden calculator/index.html">Sweden Calculator</a>
-            <a href="HTML Table Cheatsheet\index.html">HTML Table Cheatsheet</a>
-            <a href="search/index.html">Tacit Search</a>
-            <a href="Tea Cozy\index.html">Tea Cozy</a>
+    <main id="main">
+      <section class="hero shell" id="top" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="signal" aria-hidden="true"></span> Independent software engineer <span class="divider">/</span> Ashgabat, Turkmenistan</p>
+          <h1 id="hero-title">Less busywork.<br /><span>Better systems.</span></h1>
+          <p class="hero-lede">I build internal tools and automations that turn repetitive business processes into software your team can actually use.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="mailto:asman.hudaykulyyev@gmail.com?subject=Let's%20talk%20about%20an%20automation">Tell me what you need <span aria-hidden="true">↗</span></a>
+            <a class="text-link" href="#work">See selected work <span aria-hidden="true">↓</span></a>
+          </div>
         </div>
-    </body>
+        <aside class="hero-panel" aria-label="How I approach a business problem">
+          <div class="panel-top"><span>THE WORK, IN PRACTICE</span><span>01 / 03</span></div>
+          <div class="flow-step"><span class="flow-index">01</span><div><span class="flow-label">Find the friction</span><strong>Where does the work get stuck?</strong></div></div>
+          <div class="flow-step"><span class="flow-index">02</span><div><span class="flow-label">Build the right tool</span><strong>A clear workflow, connected end to end.</strong></div></div>
+          <div class="flow-step"><span class="flow-index">03</span><div><span class="flow-label">Make it usable</span><strong>Something your team wants to keep using.</strong></div></div>
+          <div class="panel-bottom"><span>Software should earn its place in your day.</span><span aria-hidden="true">↗</span></div>
+        </aside>
+      </section>
+
+      <div class="ticker" aria-label="Areas of work">
+        <div class="ticker-inner shell"><span>WORKFLOW AUTOMATION</span><span aria-hidden="true">✳</span><span>INTERNAL TOOLS</span><span aria-hidden="true">✳</span><span>PRODUCT ENGINEERING</span><span aria-hidden="true">✳</span><span>APPLIED AI</span></div>
+      </div>
+
+      <section class="section shell work-section" id="work" aria-labelledby="work-title">
+        <div class="section-heading">
+          <p class="section-kicker">01 / SELECTED WORK</p>
+          <div><h2 id="work-title">Built for real use.</h2><p>A few examples of how I turn a specific problem into working software.</p></div>
+        </div>
+        <div class="projects">
+          <article class="project project-featured">
+            <div class="project-id"><span>01</span><span>Business platform</span></div>
+            <div class="project-body">
+              <h3>HR Assistant</h3>
+              <p class="project-lede">A daily workspace for HR specialists.</p>
+              <p>I built the frontend architecture and interfaces for an HR workflow platform, working with a backend engineer and product manager. The public repository is a sanitized showcase of that work.</p>
+              <div class="tags" aria-label="Technologies"><span>React</span><span>TypeScript</span><span>Material UI</span></div>
+            </div>
+            <a class="project-link" href="https://github.com/AsmanHud/hr-assistant-showcase-v" target="_blank" rel="noopener noreferrer" aria-label="Explore the HR Assistant showcase on GitHub">Explore the showcase <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="project">
+            <div class="project-id"><span>02</span><span>Mobile utility</span></div>
+            <div class="project-body">
+              <h3>QR Töleg</h3>
+              <p class="project-lede">A simpler way to prepare TMcell balance transfers.</p>
+              <p>A Flutter app that shares recipient numbers through QR codes and prepares a transfer SMS for the sender to review and send. It focuses on one local task and removes unnecessary steps.</p>
+              <div class="tags" aria-label="Technologies"><span>Flutter</span><span>Dart</span><span>QR</span></div>
+            </div>
+            <a class="project-link" href="https://github.com/AsmanHud/qr-toleg" target="_blank" rel="noopener noreferrer" aria-label="Explore QR Töleg on GitHub">Explore the project <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="project">
+            <div class="project-id"><span>03</span><span>Hardware + software</span></div>
+            <div class="project-body">
+              <h3>Shipment Quality Monitoring Device</h3>
+              <p class="project-lede">A computer engineering thesis project.</p>
+              <p>A shipment monitoring device with embedded code and tools for visualizing recorded data. It reflects the systems side of my work: collecting information, making it usable, and connecting hardware to software.</p>
+              <div class="tags" aria-label="Technologies"><span>Embedded systems</span><span>Python</span><span>Data visualization</span></div>
+            </div>
+            <a class="project-link" href="https://github.com/AsmanHud/sqmd" target="_blank" rel="noopener noreferrer" aria-label="Explore Shipment Quality Monitoring Device on GitHub">Explore the code <span aria-hidden="true">↗</span></a>
+          </article>
+        </div>
+        <a class="more-work" href="https://github.com/AsmanHud?tab=repositories" target="_blank" rel="noopener noreferrer">More projects on GitHub <span aria-hidden="true">↗</span></a>
+      </section>
+
+      <section class="services-section" id="services" aria-labelledby="services-title">
+        <div class="shell">
+          <div class="section-heading section-heading-light">
+            <p class="section-kicker">02 / WHAT I BUILD</p>
+            <div><h2 id="services-title">Useful beats complicated.</h2><p>Start with the workflow. Choose the technology that actually helps.</p></div>
+          </div>
+          <div class="service-grid">
+            <article class="service-card"><span class="service-number">/ 01</span><div class="service-icon" aria-hidden="true">↔</div><h3>Workflow automation</h3><p>Connect the steps, systems, and handoffs that currently demand repetitive manual attention.</p></article>
+            <article class="service-card"><span class="service-number">/ 02</span><div class="service-icon" aria-hidden="true">▦</div><h3>Internal tools</h3><p>Build focused interfaces around the way your team really works, with clear paths from input to action.</p></article>
+            <article class="service-card"><span class="service-number">/ 03</span><div class="service-icon" aria-hidden="true">✳</div><h3>AI-assisted workflows</h3><p>Use language models where they help with reading, organizing, or drafting, with a person in control of important decisions.</p></article>
+          </div>
+          <p class="services-note">Have a different problem? <a href="#contact">Tell me how the work happens today <span aria-hidden="true">↗</span></a></p>
+        </div>
+      </section>
+
+      <section class="section shell about-section" id="about" aria-labelledby="about-title">
+        <div class="section-heading"><p class="section-kicker">03 / ABOUT</p><div><h2 id="about-title">The person behind the work.</h2></div></div>
+        <div class="about-grid">
+          <figure class="portrait">
+            <img src="photo_2026-03-26_20-13-13.jpg" alt="Portrait of Asman Hudaykulyyev" loading="lazy" width="2430" height="2560" />
+            <figcaption>ASMAN HUDAYKULYYEV / COMPUTER ENGINEER</figcaption>
+          </figure>
+          <div class="about-copy">
+            <p class="about-lede">I like software that makes a tangible difference to someone's workday.</p>
+            <p>I'm a computer engineer based in Ashgabat. My work spans frontend products, embedded systems, and data tools. That range helps me follow a business problem through its full workflow instead of stopping at the interface.</p>
+            <p>I've built an HR platform with a small product team and worked on wearable sensor algorithms at Huawei's Helsinki research team. I studied Computer Engineering at Vilnius Tech and spent an exchange period at KTH in Stockholm.</p>
+            <div class="about-links"><a href="https://github.com/AsmanHud" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a><a href="https://www.linkedin.com/in/asman-hudaykulyyev/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="shell contact-inner">
+          <p class="section-kicker">04 / GET IN TOUCH</p>
+          <div><h2 id="contact-title">What is taking too much of your team's time?</h2><p>Send me the rough version of the problem. We can work out what a useful solution would look like.</p><div class="contact-actions"><a class="button button-contact" href="mailto:asman.hudaykulyyev@gmail.com?subject=Let's%20talk%20about%20an%20automation">Email me <span aria-hidden="true">↗</span></a><a class="text-link" href="https://t.me/tutsogly" target="_blank" rel="noopener noreferrer">Message on Telegram <span aria-hidden="true">↗</span></a></div></div>
+          <a class="contact-email" href="mailto:asman.hudaykulyyev@gmail.com">asman.hudaykulyyev@gmail.com</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer shell"><span>© Asman Hudaykulyyev</span><span>Built with purpose. Kept simple.</span><a href="#top">Back to top ↑</a></footer>
+  </body>
 </html>
